@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GraphiRoots Studio - Agence de design graphique et développement web. 
+    Création de logos, web design, motion design et supports imprimés pour donner vie à vos projets créatifs.">
+    <meta name="keywords" content="design graphique, développement web, création logo, web design, designer, graphiste">
+    <meta name="author" content="Khaoula Zaroui">
+    <meta property="og:title" content="GraphiRoots Studio - Design Graphique & Développement Web">
+    <meta property="og:description" content="Agence de design graphique et développement web. Création de logos, web design, motion design et supports imprimés.">
+    <meta property="og:image" content="https://graphiroots.com/images/imagelink1.png"> 
+    <meta property="og:url" content="https://graphiroots.com">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"></noscript>
+    <title>GraphiRoots Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="main-nav" aria-label="Navigation principale">
+            <a href="#accueil" class="logo-link">
+                <img src="images/logo.png" alt="logo" class="logo">
+            </a>
+            <ul class="nav-list" role="navigation" aria-label="Menu principal">
+                <li class="nav-item"><a href="#accueil" class="nav-link" data-i18n="home">Accueil</a></li>
+                <li class="nav-item"><a href="#a-propos" class="nav-link" data-i18n="about">À propos</a></li>
+                <li class="nav-item"><a href="#projets" class="nav-link" data-i18n="projects">Projets</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link" data-i18n="contact">Contact</a></li>
+                <li class="nav-item language-selector">
+                    <button class="lang-btn" data-lang="fr" onclick="changeLanguage('fr')" aria-label="Changer la langue en français">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="20" height="15">
+                            <rect width="900" height="600" fill="#ED2939"/>
+                            <rect width="600" height="600" fill="#fff"/>
+                            <rect width="300" height="600" fill="#002395"/>
+                        </svg>
+                        FR
+                    </button> | 
+                    <button class="lang-btn" data-lang="en" onclick="changeLanguage('en')" aria-label="Change language to English">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15">
+                            <!-- Fond bleu -->
+                            <rect width="60" height="30" fill="#012169"/>
+                            <!-- Croix blanche -->
+                            <rect x="25" width="10" height="30" fill="#fff"/>
+                            <rect y="12.5" width="60" height="5" fill="#fff"/>
+                            <!-- Croix rouge -->
+                            <rect x="27" width="6" height="30" fill="#C8102E"/>
+                            <rect y="13.5" width="60" height="3" fill="#C8102E"/>
+                            <!-- Diagonales blanches -->
+                            <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="4"/>
+                            <!-- Diagonales rouges -->
+                            <path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="2"/>
+                        </svg>
+                        EN
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <div class="banner-container" aria-label="Bannière du site">
+            <img src="images/bannière.jpg" alt="Bannière créative" class="banner-img">
+        </div>
+    </header>
+
+    <main class="bg-light" role="main">
+        <section id="accueil" class="hero-section" aria-label="Section d'accueil" role="banner">
+            <div class="hero-content">
+                <h1 class="hero-title" data-i18n="hero_title">Développeur web et designer créatif !</h1>
+                <p class="hero-subtitle" data-i18n="hero_subtitle">Des idées créatives à la réalité numérique !</p>
+                <a href="#projets"><button class="cta-button" data-i18n="cta_projects">Découvrez mes réalisations</button></a> 
+            </div>
+        </section>
+
+        <section id="a-propos" class="about-section" aria-label="Section à propos" role="region">
+            <div class="section-container">
+                <h2 class="section-title" data-i18n="about_title">Qui suis-je ?</h2>
+                <div class="about-grid" aria-label="Présentation de mes compétences">
+                    <div class="about-image">
+                        <img src="images/art.jpg" alt="Créations graphiques et développement web" class="artwork" title="Créations graphiques">
+                    </div>
+                    <div class="about-content">
+                        <div class="presentation-header">
+                            <h3 class="creative-title text-center">
+                                <span data-i18n="designer_title">Designer polyvalente,</span><br>
+                                <span class="highlight" data-i18n="designer_subtitle">entre créativité & technique</span>
+                            </h3>
+                        </div>
+
+                        <div class="about-text">
+                            <p class="lead-text text-center" data-i18n="about_text">
+                                Créative, curieuse et passionnée, j'ai fait mes premiers pas dans le graphisme en tant qu'autodidacte. 
+                                Grâce à des ressources accessibles comme YouTube, j'ai nourri ma sensibilité visuelle et acquis une solide base en design. 
+                                Mon envie d'apprendre m'a naturellement menée vers des plateformes telles qu'OpenClassrooms, où j'ai renforcé mes compétences en conception web (HTML & CSS).
+
+                            Poussée par le désir d'approfondir mes connaissances, j'ai suivi la spécialisation UI/UX Design de <a href="https://calarts.edu/" target="_blank" aria-label="CalArts"> <mark>CalArts </mark></a> sur Coursera, 
+                            une formation complète qui m'a initiée aux méthodologies de design centrées utilisateur, à la création de maquettes web et mobiles, aux wireframes, et à la réflexion stratégique derrière une bonne expérience utilisateur.
+
+                            En parallèle, j'ai complété une certification de 300 heures en Responsive Web Design sur freeCodeCamp, ce qui m'a permis de maîtriser l'intégration responsive et les bonnes pratiques du développement front-end moderne.
+
+                            Toujours à l'affût des innovations, j'intègre également l'intelligence artificielle dans mes processus de création. 
+                            J'utilise des outils comme Cursor AI pour optimiser l'écriture de code, automatiser certaines tâches et tester plus rapidement mes idées, rendant mes projets plus fluides et performants.
+                            </p>
+
+                            <div class="competences-box" aria-label="Liste de mes expertises">
+                                <h4 class="competences-title" data-i18n="expertise_title">Expertises clés :</h4>
+                                <ul class="competences-list" role="list">
+                                    <li class="competence-item" role="listitem">
+                                        <div class="icon-box">
+                                            <img src="images/palette.png" alt="Icône de palette pour le design graphique" class="competence-icon">
+                                            
+                                        </div>
+                                        
+                                        <div class="competence-content">
+                                            <h5 class="competence-name" data-i18n="design_graphic_title">Design Graphique</h5>
+                                            <p class="competence-description">
+                                                <span data-i18n="design_graphic_desc">Logos, réseaux sociaux et supports imprimés</span><br>
+                                                <em data-i18n="design_graphic_tools">Outils : Photoshop, Illustrator, InDesign</em>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="competence-item" role="listitem">
+                                        <div class="icon-box">
+                                            <img src="images/laptop-screen.png" alt="Icône d'ordinateur pour le développement web" class="competence-icon">
+                                        </div>
+                                        <div class="competence-content">
+                                            <h5 class="competence-name" data-i18n="web_design_title">Web Design</h5>
+                                            <p class="competence-description">
+                                                <span data-i18n="web_design_desc">Maquettes interactives et développement front-end</span><br>
+                                                <em data-i18n="web_design_tools">Outils : Figma, Adobe XD, HTML/CSS</em>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="competence-item" role="listitem">
+                                        <div class="icon-box">
+                                            <img src="images/etoile-gif-anim.gif" alt="Animation d'étoile pour le motion design" class="competence-icon">
+                                        </div>
+                                        <div class="competence-content">
+                                            <h5 class="competence-name" data-i18n="motion_design_title">Motion Design</h5>
+                                            <p class="competence-description">
+                                                <span data-i18n="motion_design_desc">Animations de logos et séquences vidéo</span><br>
+                                                <em data-i18n="motion_design_tools">Techniques : After Effects, Premiere Pro</em>
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="cta-box">
+                                <p class="cta-text">
+                                    <img src="images/fire.png" alt="Icône de flamme pour les défis créatifs" class="cta-icon">
+                                    <span data-i18n="challenge_text">Prête à relever de nouveaux défis créatifs ?</span>
+                                </p>
+                                <a href="#contact" class="cta-button">
+                                    <img src="images/phone-call.png" alt="Icône de téléphone pour le contact" class="cta-icon">
+                                    <span data-i18n="contact_me">Contactez-moi</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="certifications" class="certifications">
+                <h2><img src="images/certification1.png" alt="Icône de certification" width="150px" height="150px"><span data-i18n="certifications_title">Mes Certifications</span></h2>
+                <div class="cert-grid" role="list">
+                  <div class="cert-card" role="listitem">
+                    <img src="images/coursera.jpg" alt="Logo de la certification UI/UX Design de Coursera">
+                    <h3 data-i18n="uiux_cert_title">UI/UX Design</h3>
+                    <p><span data-i18n="uiux_cert_desc">CalArts via Coursera</span><br><span data-i18n="uiux_cert_date">Février 2024</span></p>
+                    <a href="https://www.coursera.org/account/accomplishments/specialization/84QZJX2YK39L" target="_blank" data-i18n="view_certificate">Voir le certificat</a>
+                  </div>
+                  <div class="cert-card" role="listitem">
+                    <img src="images/freecodcamp.jpg" alt="Logo de la certification Responsive Web Design de FreeCodeCamp">
+                    <h3 data-i18n="responsive_cert_title">Responsive Web Design</h3>
+                    <p><span data-i18n="responsive_cert_desc">freeCodeCamp</span><br><span data-i18n="responsive_cert_date">Décembre 2023</span></p>
+                    <a href="https://www.freecodecamp.org/certification/fcc32c64a09-3946-4961-88ba-e72f11eb02d0/responsive-web-design" target="_blank" data-i18n="view_certificate">Voir le certificat</a>
+                  </div>
+                </div>
+            </div>
+              
+        </section>
+        <section id="projets" class="projects-section" aria-label="Section projets" role="region">
+            <h2 class="section-title" data-i18n="projects_title">Mes Projets</h2>
+            <div id="projetCarousel" class="carousel slide" data-bs-ride="carousel" aria-label="Carrousel des projets">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#projetCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#projetCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#projetCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#projetCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner" role="list">
+                    <div class="carousel-item active" role="listitem">
+                        <a href="conception.html#conception-logo"><img src="images/conceptionlogo.png" class="d-block w-100" alt="Exemple de conception de logo"></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 data-i18n="logo_design_title">Conception de logos</h3>
+                            <p data-i18n="logo_design_desc">Création de logos uniques et professionnels adaptés aux besoins des entreprises et des marques. 
+                                Chaque design est pensé pour refléter l'identité et les valeurs du client.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" role="listitem">
+                        <a href="conception.html#design-socialmedia"><img src="images/social_media.png" class="d-block w-100" alt="Exemple de design pour réseaux sociaux"></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 data-i18n="social_design_title">Socialmedia design</h3>
+                            <p data-i18n="social_design_desc">Conception de visuels percutants pour les réseaux sociaux (Instagram, Facebook, LinkedIn…). 
+                                L'objectif est de capter l'attention et d'optimiser l'engagement grâce à des designs attractifs et modernes.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" role="listitem">
+                        <a href="conception.html#printings"><img src="images/printings.png" class="d-block w-100" alt="Exemple de conception d'imprimés"></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 data-i18n="print_design_title">Conception des imprimés</h3>
+                            <p data-i18n="print_design_desc">Création de supports imprimés tels que cartes de visite, flyers, affiches et brochures. 
+                                Chaque design est optimisé pour un rendu professionnel et une impression de haute qualité, 
+                                tout en respectant l'identité visuelle du client.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" role="listitem">
+                        <img src="images/conceptionweb.jpg" class="d-block w-100" alt="Exemple de conception web et d'applications">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 data-i18n="web_app_design_title">Conception des sites web et des applications</h3>
+                            <p data-i18n="web_app_design_desc">Conception de sites web modernes et responsives et des applications, adaptés aux besoins des entreprises et des particuliers. De la conception UX/UI à l'intégration en appliquant les technologies suivantes (html, css et javascript), chaque projet est optimisé pour offrir une expérience utilisateur fluide et un design attractif.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#projetCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden" data-i18n="previous">Précédent</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projetCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden" data-i18n="next">Suivant</span>
+                </button>
+            </div>
+            <div class="center-flex">
+                <a href="http://127.0.0.1:5500/graphiroots.shop/index.html" target="_blank"> <button class="btn-primary">Découvrez GraphiRoots</button></a>
+            </div>
+        </section>
+        <section id="contact" class="contact-section" aria-label="Section contact" role="region">
+            <h2 class="section-title" data-i18n="contact_title">Contact</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <img src="images/gmail.png" alt="Icône de messagerie Gmail" class="icon">
+                        <p class="info-text"><span data-i18n="email_label">Email:</span> <a href="mailto:zarouikhaoula94@gmail.com">zarouikhaoula94@gmail.com</a></p>
+                    </div>
+                    <div class="info-item">
+                        <img src="images/appel.png" alt="Icône de téléphone" class="icon">
+                        <p class="info-text"><span data-i18n="phone_label">Téléphone:</span> <a href="tel:+21652798538">+216 52 798 538</a></p>
+                    </div>
+                    <div class="info-item">
+                        <img src="images/behance.png" alt="Icône de Behance" class="icon">
+                        <p class="info-text"><span data-i18n="behance_label">Behance:</span> <a href="https://www.behance.net/khaoulazaroui92" target="_blank" 
+                            aria-label="Visitez mon portfolio sur Behance">khaoulazaroui92</a></p>
+                    </div>
+                    <div class="info-item">
+                        <img src="images/facebook.png" alt="Icône de Facebook" class="icon">
+                        <p class="info-text"><span data-i18n="facebook_label">Facebook:</span> <a href="https://www.facebook.com/profile.php?id=61567374446677" target="_blank" 
+                            aria-label="Suivez-moisur Facebook">Profil Facebook</a></p>
+                    </div>
+                    <div class="info-item">
+                        <img src="images/linkedin.png" alt="Icône de LinkedIn" class="icon">
+                        <p class="info-text"><span data-i18n="linkedin_label">LinkedIn:</span> <a href="https://www.linkedin.com/in/votre-profil" target="_blank" 
+                            aria-label="Connectez-vous avec moi sur LinkedIn">Linkedin</a></p>
+                    </div>
+                </div>
+
+                <form class="contact-form" action="/api/contact" method="POST" id="contactForm" aria-label="Formulaire de contact">
+                    <div class="form-header">
+                        <img src="images/user.png" alt="Icône d'utilisateur" class="user-icon">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="nameInput" class="form-label" id="nameLabel">
+                            <img src="images/label.png" alt="Icône d'étiquette" class="icon"> <span data-i18n="name_label">Nom:</span>
+                        </label>
+                        <input type="text" id="nameInput" name="name" data-i18n-attr="placeholder" data-i18n="name_placeholder" 
+                               placeholder="ex: John Smith" required class="form-input" pattern="^[a-zA-ZÀ-ÖØ-öø-ÿ\- ]{2,50}$" 
+                               minlength="2" maxlength="50" aria-describedby="nameLabel nameError"
+                               title="Veuillez entrer un nom valide (lettres uniquement, 2-50 caractères)">
+                        <div id="nameError" class="error-message" aria-live="polite"></div>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="emailInput" class="form-label" id="emailLabel">
+                            <img src="images/email-marketing.png" alt="Icône d'email" class="icon"> <span data-i18n="email_label">Email:</span>
+                        </label>
+                        <input type="email" id="emailInput" name="email" data-i18n-attr="placeholder" data-i18n="email_placeholder" 
+                               placeholder="ex: abc@gmail.com" required class="form-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                               aria-describedby="emailLabel emailError"
+                               title="Veuillez entrer une adresse email valide">
+                        <div id="emailError" class="error-message" aria-live="polite"></div>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="messageInput" class="form-label" id="messageLabel">
+                            <img src="images/message.png" alt="Icône de message" class="icon"> <span data-i18n="message_label">Message:</span>
+                        </label>
+                        <textarea id="messageInput" name="message" rows="5" data-i18n-attr="placeholder" data-i18n="message_placeholder" 
+                                  placeholder="Entrez votre message ici..." required class="form-textarea" minlength="10" maxlength="1000"
+                                  aria-describedby="messageLabel messageError"
+                                  title="Veuillez entrer un message entre 10 et 1000 caractères"></textarea>
+                        <div id="messageError" class="error-message" aria-live="polite"></div>
+                    </div>
+                    
+                    <!-- Google reCAPTCHA -->
+                    <div class="form-group captcha-container">
+                        <div class="g-recaptcha" data-sitekey="6LcIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" data-callback="onRecaptchaSuccess" data-expired-callback="onRecaptchaExpired"></div>
+                    </div>
+                
+                    <button type="submit" class="submit-btn">
+                        <span data-i18n="send_button">Envoyer</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
+                             class="bi bi-send" viewBox="0 0 16 16">
+                            <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <a href="#accueil"><button id="backToTop" class="back-to-top" aria-label="Retour en haut de la page">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </button></a>
+
+    <footer class="main-footer">
+        <div class="footer-contenair">
+            <div class="footer-logo">
+                <a href="#accueil">
+                    <img src="images/logo.png" alt="logo" class="logo">
+                </a>
+            </div>
+            <nav class="footer-site-section" aria-label="Navigation du pied de page">
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item"><a href="#accueil" class="footer-nav-link" data-i18n="home">Accueil</a></li>
+                    <li class="footer-nav-item"><a href="#a-propos" class="footer-nav-link" data-i18n="about">A propos</a></li>
+                    <li class="footer-nav-item"><a href="#projets" class="footer-nav-link" data-i18n="projects">Projets</a></li>
+                    <li class="footer-nav-item"><a href="#contact" class="footer-nav-link" data-i18n="contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="footer-network">
+                <h3 class="footer-network-title" data-i18n="follow_us">Suivez-Nous:</h3>
+                <div class="social-links" aria-label="Liens vers les réseaux sociaux">
+                    <a href="https://www.behance.net/khaoulazaroui92" target="_blank" class="social-link" aria-label="Visitez mon portfolio sur Behance">
+                        <img src="images/behance.png" alt="Icône de Behance" class="social-media"></a>
+                    <a href="https://www.facebook.com/profile.php?id=61567374446677" target="_blank" class="social-link" aria-label="Suivez-moisur Facebook">
+                        <img src="images/facebook.png" alt="Icône de Facebook" class="social-media"></a>
+                    <a href="https://www.linkedin.com/in/votre-profil" class="social-link" target="_blank" aria-label="Connectez-vous avec moi sur LinkedIn">
+                        <img src="images/linkedin.png" alt="Icône de LinkedIn" class="social-media"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p data-i18n="copyright">&copy; 2025 GraphiRoots Studio - Tous droits réservés</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/api-config.js"></script>
+    <script type="module" src="js/language.js"></script>
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
