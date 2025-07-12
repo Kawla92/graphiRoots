@@ -1,2 +1,4 @@
 # graphiRoots
-C'est le site web de mon studio de créations graphiques. C'est un portfolio qui exprime mon parcours en design graphique et en développement web.
+Ce site présente les travaux et créations du studio.  
+Toute reproduction, utilisation ou modification est interdite sans autorisation préalable.  
+Pour toute demande, contactez-moi via le formulaire du site ou par email.
